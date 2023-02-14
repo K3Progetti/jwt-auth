@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace K3\JwtAuth\Security;
+namespace Esc\JwtAuth\Security;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

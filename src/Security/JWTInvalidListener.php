@@ -1,6 +1,6 @@
 <?php
 
-namespace K3\JwtAuth\Security;
+namespace Esc\JwtAuth\Security;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Event\JWTInvalidEvent;
 use Lexik\Bundle\JWTAuthenticationBundle\Response\JWTAuthenticationFailureResponse;

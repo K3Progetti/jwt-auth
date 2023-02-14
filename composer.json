@@ -1,5 +1,5 @@
 {
-    "name": "K3Progetti/jwt-auth",
+    "name": "k3progetti/jwt-auth",
     "type": "library",
     "description": "Symfony jwt auth bundle. Comes with refresh token enabled by default",
     "keywords": [
@@ -10,13 +10,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "K3\\JwtAuth\\": "src/"
+            "Esc\\JwtAuth\\": "src/"
         }
     },
     "require": {
         "php": "^7.3",
         "ext-json": "*",
-        "K3Progetti/user": "^4.0",
+        "k3progetti/user": "^4.0",
         "gesdinet/jwt-refresh-token-bundle": "^0.9",
         "lexik/jwt-authentication-bundle": "^2.6",
         "psr/log": "^1.1",

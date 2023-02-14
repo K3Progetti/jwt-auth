@@ -1,10 +1,10 @@
 <?php
 
-namespace K3\JwtAuth\Security;
+namespace Esc\JwtAuth\Security;
 
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LifecycleEventArgs;
-use K3\User\Entity\K3User;
+use Esc\User\Entity\EscUser;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 final class HashPasswordListener implements EventSubscriber
@@ -28,7 +28,7 @@ final class HashPasswordListener implements EventSubscriber
     public function prePersist(LifecycleEventArgs $args): void
     {
         $entity = $args->getEntity();
-        if (!$entity instanceof K3User) {
+        if (!$entity instanceof EscUser) {
             return;
         }
 
@@ -42,7 +42,7 @@ final class HashPasswordListener implements EventSubscriber
     public function preUpdate(LifecycleEventArgs $args): void
     {
         $entity = $args->getEntity();
-        if (!$entity instanceof K3User) {
+        if (!$entity instanceof EscUser) {
             return;
         }
 
@@ -62,10 +62,10 @@ final class HashPasswordListener implements EventSubscriber
     }
 
     /**
-     * @param K3User $entity
+     * @param EscUser $entity
      * @return void
      */
-    private function encodePassword(K3User $entity): void
+    private function encodePassword(EscUser $entity): void
     {
         if ($entity->getPlainPassword() === null) {
             return;
