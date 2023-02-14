@@ -1,5 +1,5 @@
 {
-    "name": "sangio90/jwt-auth",
+    "name": "K3Progetti/jwt-auth",
     "type": "library",
     "description": "Symfony jwt auth bundle. Comes with refresh token enabled by default",
     "keywords": [
@@ -16,7 +16,7 @@
     "require": {
         "php": "^7.3",
         "ext-json": "*",
-        "sangio90/user": "^4.0",
+        "K3Progetti/user": "^4.0",
         "gesdinet/jwt-refresh-token-bundle": "^0.9",
         "lexik/jwt-authentication-bundle": "^2.6",
         "psr/log": "^1.1",
